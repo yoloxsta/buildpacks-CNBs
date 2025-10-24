@@ -28,6 +28,6 @@ jobs:
 
       - name: Build and push image with Buildpacks
         run: |
-          pack build yolomurphy-buildpack/buildpack-ga:latest \
+          pack build yolomurphy/buildpack-ga:latest \
             --builder paketobuildpacks/builder:base \
             --publish
