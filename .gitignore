@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# Env files
+.env
+.env.local
+package-lock.json
