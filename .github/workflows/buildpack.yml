@@ -32,12 +32,12 @@ jobs:
 
       - name: Run container for testing
         run: |
-          docker run -d -p 8080:8080 --name app-test yolomurphy/buildpack-ga:latest
-          sleep 10  # give it a few seconds to start
+          docker run -d -p 3000:3000 --name app-test yolomurphy/buildpack-ga:latest
+          sleep 10  # wait for app to start
 
       - name: Test app health
         run: |
-          curl -f http://localhost:8080 || (echo "App test failed" && docker logs app-test && exit 1)
+          curl -f http://localhost:3000 || (echo "App test failed" && docker logs app-test && exit 1)
 
       - name: Stop and clean up container
         if: always()
