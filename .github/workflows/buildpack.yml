@@ -27,6 +27,7 @@ jobs:
 
       - name: Build image using Buildpacks
         run: |
+          cd nodejs
           pack build yolomurphy/buildpack-ga:latest \
             --builder paketobuildpacks/builder:base
 
