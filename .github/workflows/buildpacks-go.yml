@@ -37,7 +37,7 @@ jobs:
           docker run -d -p 8080:8080 --name goapp-test yolomurphy/go-buildpack-lab:latest
           sleep 10  # wait for app to start
           echo "Listing files inside the container..."
-          docker exec goapp-test ls /
+          docker exec goapp-test ls /workspace
 
 
       - name: Test app health
