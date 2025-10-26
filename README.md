@@ -2,10 +2,6 @@
 
 - Containerized with Buildpacks instead Dockerfile
 
-```
-docker run -d --name buildpack -p 3000:3000 yolomurphy/buildpack-ga:latest
-```
-
 ## Simple java app
 ```
 Build the app using pack
