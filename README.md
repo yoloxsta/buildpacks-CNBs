@@ -56,3 +56,6 @@ Build your Node.js app:
 - docker run --rm -it -e "PORT=8080" -p 8080:8080 sample-app
 
 ```
+- https://paketo.io/docs/
+- https://buildpacks.io/docs/
+- https://github.com/buildpacks/samples
