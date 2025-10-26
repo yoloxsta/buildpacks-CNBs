@@ -36,6 +36,9 @@ jobs:
         run: |
           docker run -d -p 8080:8080 --name goapp-test yolomurphy/go-buildpack-lab:latest
           sleep 10  # wait for app to start
+          docker exec -it goapp-test sh
+          ls 
+          exit
 
       - name: Test app health
         run: |
