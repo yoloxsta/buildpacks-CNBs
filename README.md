@@ -56,6 +56,27 @@ Build your Node.js app:
 - docker run --rm -it -e "PORT=8080" -p 8080:8080 sample-app
 
 ```
+## Golang
+```
+- pack build my-app --buildpack paketo-buildpacks/go \
+  --builder paketobuildpacks/builder-jammy-base
+
+---
+Why your Go app does not show source files
+
+Go apps are compiled into a binary, so the buildpack:
+
+Compiles main.go → a single binary
+
+Keeps only that binary
+
+Removes your main.go, go.mod, etc.
+
+This makes your image smaller and faster.
+So when you docker exec into your Go Buildpack container, you’ll see only the binary, not the source.
+
+```
+
 - https://paketo.io/docs/
 - https://buildpacks.io/docs/
 - https://github.com/buildpacks/samples
