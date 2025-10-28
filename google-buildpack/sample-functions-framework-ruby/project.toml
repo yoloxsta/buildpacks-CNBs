@@ -1,0 +1,3 @@
+[[build.env]]
+name = "GOOGLE_ENTRYPOINT"
+value = "bundle exec functions-framework-ruby --source=app.rb --target=hello"
