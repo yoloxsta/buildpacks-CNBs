@@ -62,6 +62,9 @@ Build your Node.js app:
   --builder paketobuildpacks/builder-jammy-base
 
 ---
+- pack build sample-go --builder gcr.io/buildpacks/builder:v1
+
+---
 Why your Go app does not show source files
 
 Go apps are compiled into a binary, so the buildpack:
