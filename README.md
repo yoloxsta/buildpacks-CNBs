@@ -80,7 +80,9 @@ So when you docker exec into your Go Buildpack container, you’ll see only the 
 
 ```
 
+
 - https://paketo.io/docs/
 - https://buildpacks.io/docs/
 - https://github.com/buildpacks/samples
 - https://cloud.google.com/docs/buildpacks/overview
+- docker rmi -f $(docker images -aq)
