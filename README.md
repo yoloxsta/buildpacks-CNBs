@@ -63,6 +63,9 @@ Build your Node.js app:
 
 ---
 - pack build sample-go --builder gcr.io/buildpacks/builder:v1
+- pack build sample-go --builder gcr.io/buildpacks/builder:latest
+- pack build sample-go --builder gcr.io/buildpacks/builder:google-22
+- pack build sample-go --builder gcr.io/buildpacks/builder:google-24
 
 ---
 Why your Go app does not show source files
