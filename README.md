@@ -82,7 +82,13 @@ This makes your image smaller and faster.
 So when you docker exec into your Go Buildpack container, you’ll see only the binary, not the source.
 
 ```
+## demo compose lab
+```
+- pack build buildpacks-demo-backend --path ./backend --builder paketobuildpacks/builder-jammy-base
+- pack build buildpacks-demo-frontend --path ./frontend --builder paketobuildpacks/builder-jammy-base
+- docker compose up
 
+```
 
 - https://paketo.io/docs/
 - https://buildpacks.io/docs/
