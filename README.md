@@ -1,4 +1,4 @@
-## Google Buildpacks CBNS
+## Google Buildpacks CNBs
 
 - Containerized with Buildpacks instead Dockerfile
 
