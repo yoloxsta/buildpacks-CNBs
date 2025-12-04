@@ -20,7 +20,6 @@ To test out your new app image locally, you can run it with Docker:
 Now hit localhost:8080 in your favorite browser and take a minute to enjoy the view.
 
 ```
-
 ## Nodejs
 ```
 Step 1: Use a Valid Builder
