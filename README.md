@@ -1,6 +1,5 @@
 ## Google Buildpacks CNBs
 - Containerized with Buildpacks instead Dockerfile
-
 ## Simple java app
 ```
 Build the app using pack
